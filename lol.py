@@ -8,8 +8,8 @@ import httpx
 import datetime
 from colorama           import Fore
 
-config = json.load(open("config.json", "r"))
-proxies = open("proxies.txt", "r").read().splitlines()
+config = json.load(open("data/config.json", "r"))
+proxies = open("data/proxies.txt", "r").read().splitlines()
 banner = Fore.LIGHTBLUE_EX + '''
        _          _ __   
   ____(_)__ _  __(_) /__ 
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     Logging.send2('Starting threads...')
     cool = config["cool_per_thread"]
     while True:
-        with open("tokens.txt", "r") as file:
+        with open("data/tokens.txt", "r") as file:
             tokens = file.read().splitlines()
             for token in tokens:
                 threading.Thread(target=send_request, args=(config["channelid"], token,)).start()
