@@ -61,5 +61,5 @@ if __name__ == "__main__":
         with open("tokens.txt", "r") as file:
             tokens = file.read().splitlines()
             for token in tokens:
-                threading.Thread(target=send_request, args=('1225510131626803312', token,)).start()
+                threading.Thread(target=send_request, args=(config["channelid"], token,)).start()
                 time.sleep(float(cool))
