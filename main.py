@@ -1,3 +1,21 @@
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+### ZGOV ON DISCORD
+
 import time
 import threading
 import random
@@ -53,7 +71,7 @@ def send_request(channelid, token):
 
 if __name__ == "__main__":
     os.system('cls')
-    os.system('title RIPVile @encq')
+    os.system('title RIPVile @zgov on discord')
     print(banner)
     Logging.send2('Starting threads...')
     cool = config["cool_per_thread"]
